@@ -1,0 +1,27 @@
+2026-04-18 14:42:20,174 | INFO | pipeline_variant=nodate_train1month_frozen_oos12 prompt_module=roll_xs_bucket_factor_pipeline_nodate oos_infer=combo_cache
+2026-04-18 14:42:20,190 | INFO | backend=qwen32 run_id=qwen32_nodate_train1m_frozen_oos12_20260418_144220
+2026-04-18 14:42:20,191 | INFO | start_train_month=2023-01 n_rolls(OOS)=12
+2026-04-18 14:42:20,192 | INFO | BATCH_SIZE=1 GRAD_ACCUM=16
+2026-04-18 14:44:23,951 | INFO | Rows after dropna(T0_T1_RETURN): 2435898 | event_cols=34
+2026-04-18 14:44:38,536 | INFO | multi_gpu_auto: device_map=auto max_memory per GPU ~70GiB
+2026-04-18 14:44:38,538 | INFO | hub_offline: HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1
+2026-04-18 14:46:44,102 | INFO | [train once] train=2023-01 val=2023-02 | first OOS test month=2023-03 | lab_tr=7385 lab_va=8871 | this roll test_rows=70348
+2026-04-18 16:03:02,320 | INFO | [roll 1] VAL acc=0.2257 pred_spread(4-0)=0.0006250169515612937
+2026-04-18 16:03:02,327 | INFO | VAL class breakdown after single-month training (val month 2023-02):
+2026-04-18 16:20:19,913 | INFO | VAL predicted class (argmax) counts: {0: 1570, 1: 1527, 2: 644, 3: 215, 4: 4915}
+2026-04-18 16:20:19,920 | INFO | VAL true bucket counts: {0: 1911, 1: 1703, 2: 1818, 3: 1732, 4: 1707}
+2026-04-18 16:20:19,925 | INFO | VAL confusion [true_bucket x pred_class]:
+pred_class     0    1    2   3     4
+true_bucket                         
+0            454  241   60  28  1128
+1            272  312  104  59   956
+2            248  344  217  58   951
+3            249  357  181  42   903
+4            347  273   82  28   977
+2026-04-18 16:20:21,084 | INFO | [frozen OOS combo_cache] union combo_key across 12 test months: 32380 unique
+2026-04-18 16:20:21,117 | INFO | Infer unique combos: 32380 (batch_size=32)
+2026-04-18 16:42:23,670 | INFO | Saved final_results: /finance_ML/zhanghaohan/rl_remodeled/may_fix/results/qwen32_nodate_train1m_frozen_oos12_20260418_144220/final_results.csv
+2026-04-18 16:42:23,872 | INFO | [final] Test mean daily IC (Factor vs T0_T1_RETURN): -0.000999
+2026-04-18 16:42:24,308 | INFO | [final] Test mean daily IC TOP/BOT 5%: 0.000761
+2026-04-18 16:42:25,802 | INFO | Saved factor matrix: /finance_ML/zhanghaohan/rl_remodeled/may_fix/results/qwen32_nodate_train1m_frozen_oos12_20260418_144220/factor_matrix.csv
+2026-04-18 16:42:27,176 | INFO | Saved final checkpoint: /finance_ML/zhanghaohan/rl_remodeled/may_fix/mappings/qwen32_nodate_train1m_frozen_oos12_20260418_144220/final

@@ -1,0 +1,97 @@
+{
+  "model": "trivial_mlp",
+  "in_dim": 36,
+  "hidden": 256,
+  "dropout": 0.1,
+  "lr": 0.003,
+  "max_steps_per_month": 400,
+  "event_cols_count": 34,
+  "test_ic": 0.002238953534972416,
+  "test_ic_top_bottom_5pct": 0.010236455294393506,
+  "rolls": [
+    {
+      "roll": 1,
+      "train_month": "2023-01",
+      "val_month": "2023-02",
+      "test_month": "2023-03",
+      "n_test_rows": 70348
+    },
+    {
+      "roll": 2,
+      "train_month": "2023-02",
+      "val_month": "2023-03",
+      "test_month": "2023-04",
+      "n_test_rows": 64667
+    },
+    {
+      "roll": 3,
+      "train_month": "2023-03",
+      "val_month": "2023-04",
+      "test_month": "2023-05",
+      "n_test_rows": 65734
+    },
+    {
+      "roll": 4,
+      "train_month": "2023-04",
+      "val_month": "2023-05",
+      "test_month": "2023-06",
+      "n_test_rows": 61668
+    },
+    {
+      "roll": 5,
+      "train_month": "2023-05",
+      "val_month": "2023-06",
+      "test_month": "2023-07",
+      "n_test_rows": 75190
+    },
+    {
+      "roll": 6,
+      "train_month": "2023-06",
+      "val_month": "2023-07",
+      "test_month": "2023-08",
+      "n_test_rows": 82124
+    },
+    {
+      "roll": 7,
+      "train_month": "2023-07",
+      "val_month": "2023-08",
+      "test_month": "2023-09",
+      "n_test_rows": 70575
+    },
+    {
+      "roll": 8,
+      "train_month": "2023-08",
+      "val_month": "2023-09",
+      "test_month": "2023-10",
+      "n_test_rows": 61468
+    },
+    {
+      "roll": 9,
+      "train_month": "2023-09",
+      "val_month": "2023-10",
+      "test_month": "2023-11",
+      "n_test_rows": 68080
+    },
+    {
+      "roll": 10,
+      "train_month": "2023-10",
+      "val_month": "2023-11",
+      "test_month": "2023-12",
+      "n_test_rows": 64460
+    },
+    {
+      "roll": 11,
+      "train_month": "2023-11",
+      "val_month": "2023-12",
+      "test_month": "2024-01",
+      "n_test_rows": 73731
+    },
+    {
+      "roll": 12,
+      "train_month": "2023-12",
+      "val_month": "2024-01",
+      "test_month": "2024-02",
+      "n_test_rows": 54674
+    }
+  ]
+}

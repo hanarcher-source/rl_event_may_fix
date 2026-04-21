@@ -1,0 +1,34 @@
+2026-04-19 10:25:44,940 | INFO | backend=qwen32 run_id=qwen32_xs_roll12_nodate_20260419_102544 (nodate rolling entry)
+2026-04-19 10:25:44,951 | INFO | start_train_month=2023-01 n_rolls=12
+2026-04-19 10:25:44,953 | INFO | BATCH_SIZE=1 GRAD_ACCUM=16
+2026-04-19 10:28:02,638 | INFO | Rows after dropna(T0_T1_RETURN): 2435898 | event_cols=34
+2026-04-19 10:28:22,049 | INFO | multi_gpu_auto: device_map=auto max_memory per GPU ~70GiB
+2026-04-19 10:31:48,677 | INFO | [roll 1/12] train=2023-01 val=2023-02 test=2023-03 | lab_tr=7385 lab_va=8871 test_rows=70348
+2026-04-19 11:31:47,805 | INFO | [roll 1] VAL acc=0.2384 pred_spread(4-0)=0.0002460550636731902
+2026-04-19 11:52:02,898 | INFO | [roll 2/12] train=2023-02 val=2023-03 test=2023-04 | lab_tr=8871 lab_va=11044 test_rows=64667
+2026-04-19 12:55:52,474 | INFO | [roll 2] VAL acc=0.2360 pred_spread(4-0)=nan
+2026-04-19 13:23:21,132 | INFO | [roll 3/12] train=2023-03 val=2023-04 test=2023-05 | lab_tr=11044 lab_va=15028 test_rows=65734
+2026-04-19 14:34:08,011 | INFO | [roll 3] VAL acc=0.2250 pred_spread(4-0)=nan
+2026-04-19 14:56:52,259 | INFO | [roll 4/12] train=2023-04 val=2023-05 test=2023-06 | lab_tr=15028 lab_va=12317 test_rows=61668
+2026-04-19 16:03:02,943 | INFO | [roll 4] VAL acc=0.2398 pred_spread(4-0)=nan
+2026-04-19 16:24:23,345 | INFO | [roll 5/12] train=2023-05 val=2023-06 test=2023-07 | lab_tr=12317 lab_va=11560 test_rows=75190
+2026-04-19 17:29:08,158 | INFO | [roll 5] VAL acc=0.2382 pred_spread(4-0)=nan
+2026-04-19 18:00:05,987 | INFO | [roll 6/12] train=2023-06 val=2023-07 test=2023-08 | lab_tr=11560 lab_va=16939 test_rows=82124
+2026-04-19 19:14:19,517 | INFO | [roll 6] VAL acc=0.2213 pred_spread(4-0)=nan
+2026-04-19 19:47:28,332 | INFO | [roll 7/12] train=2023-07 val=2023-08 test=2023-09 | lab_tr=16384 lab_va=18062 test_rows=70575
+2026-04-19 21:03:47,274 | INFO | [roll 7] VAL acc=0.2249 pred_spread(4-0)=-0.0002545234934254641
+2026-04-19 21:25:20,948 | INFO | [roll 8/12] train=2023-08 val=2023-09 test=2023-10 | lab_tr=16384 lab_va=11652 test_rows=61468
+2026-04-19 22:30:14,515 | INFO | [roll 8] VAL acc=0.2001 pred_spread(4-0)=nan
+2026-04-19 22:50:15,766 | INFO | [roll 9/12] train=2023-09 val=2023-10 test=2023-11 | lab_tr=11652 lab_va=10884 test_rows=68080
+2026-04-19 23:53:43,740 | INFO | [roll 9] VAL acc=0.2413 pred_spread(4-0)=nan
+2026-04-20 00:15:29,208 | INFO | [roll 10/12] train=2023-10 val=2023-11 test=2023-12 | lab_tr=10884 lab_va=11857 test_rows=64460
+2026-04-20 01:20:42,868 | INFO | [roll 10] VAL acc=0.2408 pred_spread(4-0)=nan
+2026-04-20 01:39:14,077 | INFO | [roll 11/12] train=2023-11 val=2023-12 test=2024-01 | lab_tr=11857 lab_va=10042 test_rows=73731
+2026-04-20 02:41:16,397 | INFO | [roll 11] VAL acc=0.2344 pred_spread(4-0)=nan
+2026-04-20 03:03:00,483 | INFO | [roll 12/12] train=2023-12 val=2024-01 test=2024-02 | lab_tr=10042 lab_va=11858 test_rows=54674
+2026-04-20 04:08:11,641 | INFO | [roll 12] VAL acc=0.1911 pred_spread(4-0)=nan
+2026-04-20 04:23:27,321 | INFO | Saved final_results: /finance_ML/zhanghaohan/rl_remodeled/may_fix/results/qwen32_xs_roll12_nodate_20260419_102544/final_results.csv
+2026-04-20 04:23:27,590 | INFO | [final] Test mean daily IC (Factor vs T0_T1_RETURN): 0.006716
+2026-04-20 04:23:28,120 | INFO | [final] Test mean daily IC TOP/BOT 5%: 0.011946
+2026-04-20 04:23:29,467 | INFO | Saved factor matrix: /finance_ML/zhanghaohan/rl_remodeled/may_fix/results/qwen32_xs_roll12_nodate_20260419_102544/factor_matrix.csv
+2026-04-20 04:23:40,489 | INFO | Saved final checkpoint: /finance_ML/zhanghaohan/rl_remodeled/may_fix/mappings/qwen32_xs_roll12_nodate_20260419_102544/final

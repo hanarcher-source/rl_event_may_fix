@@ -1,0 +1,32 @@
+2026-04-20 22:54:31,752 | INFO | pipeline_version=v2 prompt_module=prompt_xs_bucket_v2
+2026-04-20 22:54:31,761 | INFO | backend=qwen32 run_id=qwen32_v2_xs_roll12_20260420_225431
+2026-04-20 22:54:31,762 | INFO | start_train_month=2023-01 n_rolls=12
+2026-04-20 22:54:31,763 | INFO | BATCH_SIZE=1 GRAD_ACCUM=16
+2026-04-20 22:56:50,020 | INFO | Rows after dropna(T0_T1_RETURN): 2435898 | event_cols=34
+2026-04-20 22:57:04,520 | INFO | multi_gpu_auto: device_map=auto max_memory per GPU ~70GiB
+2026-04-20 22:57:04,521 | INFO | hub_offline: HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1
+2026-04-20 22:59:08,902 | INFO | [roll 1/12] train=2023-01 val=2023-02 test=2023-03 | lab_tr=7385 lab_va=8871 test_rows=70348
+2026-04-20 23:54:35,500 | INFO | [roll 1] Train stop: MAX_STEPS_PER_MONTH=400 (6400 micro-batches, 86.7% of epoch loader; bar stops early by design).
+2026-04-20 23:54:35,508 | INFO | [roll 1] Validation: 8871 batches (frozen eval, no grad).
+2026-04-21 00:14:32,595 | INFO | [roll 1] VAL acc=0.2300 pred_spread(4-0)=0.0008218534290257819
+2026-04-21 00:40:03,637 | INFO | [roll 2/12] train=2023-02 val=2023-03 test=2023-04 | lab_tr=8871 lab_va=11044 test_rows=64667
+2026-04-21 01:35:23,750 | INFO | [roll 2] Train stop: MAX_STEPS_PER_MONTH=400 (6400 micro-batches, 72.1% of epoch loader; bar stops early by design).
+2026-04-21 01:35:23,758 | INFO | [roll 2] Validation: 11044 batches (frozen eval, no grad).
+2026-04-21 02:00:16,290 | INFO | [roll 2] VAL acc=0.2237 pred_spread(4-0)=nan
+2026-04-21 02:34:54,911 | INFO | [roll 3/12] train=2023-03 val=2023-04 test=2023-05 | lab_tr=11044 lab_va=15028 test_rows=65734
+2026-04-21 03:30:27,143 | INFO | [roll 3] Train stop: MAX_STEPS_PER_MONTH=400 (6400 micro-batches, 58.0% of epoch loader; bar stops early by design).
+2026-04-21 03:30:27,151 | INFO | [roll 3] Validation: 15028 batches (frozen eval, no grad).
+2026-04-21 04:04:17,377 | INFO | [roll 3] VAL acc=0.2215 pred_spread(4-0)=nan
+2026-04-21 04:32:48,739 | INFO | [roll 4/12] train=2023-04 val=2023-05 test=2023-06 | lab_tr=15028 lab_va=12317 test_rows=61668
+2026-04-21 05:28:08,157 | INFO | [roll 4] Train stop: MAX_STEPS_PER_MONTH=400 (6400 micro-batches, 42.6% of epoch loader; bar stops early by design).
+2026-04-21 05:28:08,167 | INFO | [roll 4] Validation: 12317 batches (frozen eval, no grad).
+2026-04-21 05:55:54,192 | INFO | [roll 4] VAL acc=0.2082 pred_spread(4-0)=nan
+2026-04-21 06:22:37,961 | INFO | [roll 5/12] train=2023-05 val=2023-06 test=2023-07 | lab_tr=12317 lab_va=11560 test_rows=75190
+2026-04-21 07:17:57,336 | INFO | [roll 5] Train stop: MAX_STEPS_PER_MONTH=400 (6400 micro-batches, 52.0% of epoch loader; bar stops early by design).
+2026-04-21 07:17:57,345 | INFO | [roll 5] Validation: 11560 batches (frozen eval, no grad).
+2026-04-21 07:43:59,853 | INFO | [roll 5] VAL acc=0.2275 pred_spread(4-0)=nan
+2026-04-21 08:23:02,427 | INFO | [roll 6/12] train=2023-06 val=2023-07 test=2023-08 | lab_tr=11560 lab_va=16939 test_rows=82124
+2026-04-21 09:18:18,404 | INFO | [roll 6] Train stop: MAX_STEPS_PER_MONTH=400 (6400 micro-batches, 55.4% of epoch loader; bar stops early by design).
+2026-04-21 09:18:18,412 | INFO | [roll 6] Validation: 16939 batches (frozen eval, no grad).
+2026-04-21 09:56:29,765 | INFO | [roll 6] VAL acc=0.2036 pred_spread(4-0)=nan
+2026-04-21 10:38:12,866 | INFO | [roll 7/12] train=2023-07 val=2023-08 test=2023-09 | lab_tr=16384 lab_va=18062 test_rows=70575

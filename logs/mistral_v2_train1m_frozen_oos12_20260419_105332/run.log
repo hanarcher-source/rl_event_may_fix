@@ -1,0 +1,28 @@
+2026-04-19 10:53:32,812 | INFO | pipeline_variant=v2_train1month_frozen_oos12 prompt_module=prompt_xs_bucket_v2 oos_infer=combo_cache (single train month, then frozen inference)
+2026-04-19 10:53:32,816 | INFO | backend=mistral run_id=mistral_v2_train1m_frozen_oos12_20260419_105332
+2026-04-19 10:53:32,817 | INFO | start_train_month=2023-01 n_rolls(OOS)=12
+2026-04-19 10:53:32,818 | INFO | BATCH_SIZE=4 GRAD_ACCUM=4
+2026-04-19 10:55:34,975 | INFO | Rows after dropna(T0_T1_RETURN): 2435898 | event_cols=34
+2026-04-19 10:55:50,028 | INFO | hub_offline: HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1
+2026-04-19 10:56:45,817 | INFO | [train once] train=2023-01 val=2023-02 | first OOS test month=2023-03 | lab_tr=7385 lab_va=8871 | this roll test_rows=70348
+2026-04-19 11:07:32,376 | INFO | [roll 1] Train stop: MAX_STEPS_PER_MONTH=400 (1600 micro-batches, 86.6% of epoch loader; bar stops early by design).
+2026-04-19 11:07:32,378 | INFO | [roll 1] Validation: 2218 batches (frozen eval, no grad).
+2026-04-19 11:12:09,236 | INFO | [roll 1] VAL acc=0.1942 pred_spread(4-0)=nan
+2026-04-19 11:12:09,240 | INFO | VAL class breakdown after single-month training (val month 2023-02):
+2026-04-19 11:16:45,987 | INFO | VAL predicted class (argmax) counts: {2: 3617, 3: 5254}
+2026-04-19 11:16:45,988 | INFO | VAL true bucket counts: {0: 1911, 1: 1703, 2: 1818, 3: 1732, 4: 1707}
+2026-04-19 11:16:45,993 | INFO | VAL confusion [true_bucket x pred_class]:
+pred_class     2     3
+true_bucket           
+0            658  1253
+1            705   998
+2            777  1041
+3            786   946
+4            691  1016
+2026-04-19 11:16:47,135 | INFO | [frozen OOS combo_cache] union combo_key across 12 test months: 32380 unique
+2026-04-19 11:16:47,174 | INFO | Infer unique combos: 32380 (batch_size=32)
+2026-04-19 11:32:41,343 | INFO | Saved final_results: /finance_ML/zhanghaohan/rl_remodeled/may_fix/results/mistral_v2_train1m_frozen_oos12_20260419_105332/final_results.csv
+2026-04-19 11:32:41,521 | INFO | [final] Test mean daily IC (Factor vs T0_T1_RETURN): 0.002706
+2026-04-19 11:32:41,931 | INFO | [final] Test mean daily IC TOP/BOT 5%: 0.007388
+2026-04-19 11:32:43,444 | INFO | Saved factor matrix: /finance_ML/zhanghaohan/rl_remodeled/may_fix/results/mistral_v2_train1m_frozen_oos12_20260419_105332/factor_matrix.csv
+2026-04-19 11:32:44,729 | INFO | Saved final checkpoint: /finance_ML/zhanghaohan/rl_remodeled/may_fix/mappings/mistral_v2_train1m_frozen_oos12_20260419_105332/final

@@ -1,0 +1,6 @@
+2026-04-18 16:56:03,023 | INFO | backend=qwen32 run_id=qwen32_xs_roll12_nodate_20260418_165602 (nodate rolling entry)
+2026-04-18 16:56:03,025 | INFO | start_train_month=2023-01 n_rolls=12
+2026-04-18 16:56:03,026 | INFO | BATCH_SIZE=1 GRAD_ACCUM=16
+2026-04-18 16:58:04,963 | INFO | Rows after dropna(T0_T1_RETURN): 2435898 | event_cols=34
+2026-04-18 16:58:24,587 | INFO | multi_gpu_auto: device_map=auto max_memory per GPU ~70GiB
+2026-04-18 17:00:05,390 | INFO | [roll 1/12] train=2023-01 val=2023-02 test=2023-03 | lab_tr=7385 lab_va=8871 test_rows=70348

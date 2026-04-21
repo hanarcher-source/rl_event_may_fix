@@ -1,0 +1,121 @@
+{
+  "pipeline_variant": "nodate_train1month_frozen_oos12",
+  "prompt_module": "roll_xs_bucket_factor_pipeline_nodate",
+  "oos_infer": "combo_cache",
+  "infer_batch_size": 32,
+  "backend": "qwen32",
+  "run_id": "qwen32_nodate_train1m_frozen_oos12_20260418_144220",
+  "test_ic": -0.0009993041318950068,
+  "test_ic_top_bottom_5pct": 0.0007613082743260323,
+  "rolls": [
+    {
+      "roll": 1,
+      "train_month": "2023-01",
+      "val_month": "2023-02",
+      "test_month": "2023-03",
+      "n_test_rows": 70348,
+      "trained_this_roll": true,
+      "infer_mode": "combo_cache"
+    },
+    {
+      "roll": 2,
+      "train_month": "2023-02",
+      "val_month": "2023-03",
+      "test_month": "2023-04",
+      "n_test_rows": 64667,
+      "trained_this_roll": false,
+      "infer_mode": "combo_cache"
+    },
+    {
+      "roll": 3,
+      "train_month": "2023-03",
+      "val_month": "2023-04",
+      "test_month": "2023-05",
+      "n_test_rows": 65734,
+      "trained_this_roll": false,
+      "infer_mode": "combo_cache"
+    },
+    {
+      "roll": 4,
+      "train_month": "2023-04",
+      "val_month": "2023-05",
+      "test_month": "2023-06",
+      "n_test_rows": 61668,
+      "trained_this_roll": false,
+      "infer_mode": "combo_cache"
+    },
+    {
+      "roll": 5,
+      "train_month": "2023-05",
+      "val_month": "2023-06",
+      "test_month": "2023-07",
+      "n_test_rows": 75190,
+      "trained_this_roll": false,
+      "infer_mode": "combo_cache"
+    },
+    {
+      "roll": 6,
+      "train_month": "2023-06",
+      "val_month": "2023-07",
+      "test_month": "2023-08",
+      "n_test_rows": 82124,
+      "trained_this_roll": false,
+      "infer_mode": "combo_cache"
+    },
+    {
+      "roll": 7,
+      "train_month": "2023-07",
+      "val_month": "2023-08",
+      "test_month": "2023-09",
+      "n_test_rows": 70575,
+      "trained_this_roll": false,
+      "infer_mode": "combo_cache"
+    },
+    {
+      "roll": 8,
+      "train_month": "2023-08",
+      "val_month": "2023-09",
+      "test_month": "2023-10",
+      "n_test_rows": 61468,
+      "trained_this_roll": false,
+      "infer_mode": "combo_cache"
+    },
+    {
+      "roll": 9,
+      "train_month": "2023-09",
+      "val_month": "2023-10",
+      "test_month": "2023-11",
+      "n_test_rows": 68080,
+      "trained_this_roll": false,
+      "infer_mode": "combo_cache"
+    },
+    {
+      "roll": 10,
+      "train_month": "2023-10",
+      "val_month": "2023-11",
+      "test_month": "2023-12",
+      "n_test_rows": 64460,
+      "trained_this_roll": false,
+      "infer_mode": "combo_cache"
+    },
+    {
+      "roll": 11,
+      "train_month": "2023-11",
+      "val_month": "2023-12",
+      "test_month": "2024-01",
+      "n_test_rows": 73731,
+      "trained_this_roll": false,
+      "infer_mode": "combo_cache"
+    },
+    {
+      "roll": 12,
+      "train_month": "2023-12",
+      "val_month": "2024-01",
+      "test_month": "2024-02",
+      "n_test_rows": 54674,
+      "trained_this_roll": false,
+      "infer_mode": "combo_cache"
+    }
+  ],
+  "n_unique_combos_infer": 32380
+}
