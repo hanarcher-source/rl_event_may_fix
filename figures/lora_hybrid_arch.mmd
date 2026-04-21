@@ -1,0 +1,23 @@
+%% Mermaid: paste into https://mermaid.live or export SVG for slides
+%% LoRA–hybrid factor model (conceptual)
+
+flowchart LR
+  subgraph IN[" "]
+    P["Tokenized prompt\n(combo events as text)"]
+  end
+
+  subgraph LM["Pretrained causal LM backbone"]
+    direction TB
+    F["Frozen transformer\nweights"]
+    L["LoRA adapters\n(q / k / v / o projections)"]
+  end
+
+  H["Last hidden layer"]
+  POOL["Last-token pooling\n(attention mask)"]
+  HEAD["Trainable linear head\nH → 5 logits"]
+  OUT["Softmax expectation\n→ Factor ∈ [0,100]"]
+  Y["Label y ∈ {0,…,4}\n(universe quintile)"]
+
+  P --> LM
+  LM --> H --> POOL --> HEAD --> OUT
+  HEAD -. "cross-entropy" .-> Y
